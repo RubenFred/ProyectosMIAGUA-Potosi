@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6E3CE"
+    tools:context="com.info.fred.pc3.proyectosmiagua_potosi.MainActivity">
+
+
+
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:id="@+id/swipeRefreshLayout"
+       android:layout_width="368dp"
+       android:layout_height="495dp"
+       tools:layout_editor_absoluteY="8dp"
+       tools:layout_editor_absoluteX="8dp"
+       >
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/unidadesProyectosRecyclerView"
+           android:clipToPadding="false"
+           android:paddingBottom="8dp"
+           android:layout_marginLeft="4dp"
+           android:paddingRight="4dp"
+           android:paddingTop="8dp"
+           >
+
+       </android.support.v7.widget.RecyclerView>
+
+   </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen Gral"
+        android:onClick="resumenGeneral"
+        />
+</android.support.constraint.ConstraintLayout>
